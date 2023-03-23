@@ -1,5 +1,7 @@
 package ctecnica.example;
 
+import java.util.Scanner;
+
 // import java.util.Scanner;
 
 /**
@@ -10,12 +12,20 @@ public class App
 {
     public static void main( String[] args )
     {
+    //    String bloque;
+    //    Scanner entrada = new Scanner(System.in);
+    //    System.out.println("introduce bloque 1");
+    //    bloque = entrada.nextLine();
+    //    System.out.println(bloque);
+
+    Game game = new Game();
+    String result = game.bloque("0235");
+    System.out.println(result);
+        
+
       
-        String entrada = " 0 h 2 3 5 1 v 3 1 1";
-        System.out.println(entrada);
-        // int option = 0;
-        // System.out.println(" 1. Eat \n 2. Play \n 3. Sleep \n 4. Poop \n 5. Status \n 6. Exit \n ");
-        // Scanner qwerty = new Scanner(System.in);
-        // option = Integer.parseInt(qwerty.next());
+       
+       
+       
     }
 }
