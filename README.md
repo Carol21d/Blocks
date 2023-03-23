@@ -24,3 +24,9 @@ A block‘s orientation is either vertical („v“) or horizontal („h“). Yo
 - vertical blocks only vertically: up (positive number) or down (negative number)
 - horizontal blocks only horizontally: right (positive number) or left (negative number)
 
+## Herramientas utilizadas
+
+*Visual Studio
+## Lenguajes utilizados
+
+* Java
