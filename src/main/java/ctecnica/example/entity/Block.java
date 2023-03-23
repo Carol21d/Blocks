@@ -5,25 +5,33 @@ package ctecnica.example.entity;
 public class Block {
     //atributos
     Integer length;
-    String orientacion;
+    String orientation;
     Integer positionX;
     Integer positionY;
     Integer width = 1;
     Integer id = 0;
 
     //constructores
-    public Block(Integer length, String orientacion, Integer positionX, Integer positionY, Integer width, Integer id) {
+    public Block(Integer length, String orientation, Integer positionX, Integer positionY, Integer width, Integer id) {
         this.length = length;
-        this.orientacion = orientacion;
+        this.orientation = orientation;
         this.positionX = positionX;
         this.positionY = positionY;
         this.width = width;
         this.id = id;
     }
     
-
-
     
+
+
+// constructor vacio
+    public Block() {
+    }
+
+
+
+
+
     //getters y setters
     public Integer getLength() {
         return length;
@@ -33,12 +41,12 @@ public class Block {
         this.length = length;
     }
 
-    public String getOrientacion() {
-        return orientacion;
+    public String getOrientation() {
+        return orientation;
     }
 
-    public void setOrientacion(String orientacion) {
-        this.orientacion = orientacion;
+    public void setOrientation(String orientation) {
+        this.orientation = orientation;
     }
 
     public Integer getPositionX() {
