@@ -10,6 +10,7 @@
 - h) 0 h 4 3 3 2 v 6 2 2
 - i) 0 v 3 3 2 1 v 3 5 2
 - j) 0 h 1 3 2 1 h 5 3 2
+
 Try to use different classes to model the different entities implied in the solution. You can use aprogramming language of your choice (we prefer PHP) or even pseudo-language.
 ## Instructions:
 A block:
