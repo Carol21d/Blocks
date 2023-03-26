@@ -18,11 +18,13 @@ public class App
     //    bloque = entrada.nextLine();
     //    System.out.println(bloque);
 
-    Game game = new Game();
-    String result = game.bloque("0235");
+    Game bloque1 = new Game();
+    // Game bloque2 = new Game();
+    String result = bloque1.bloque("0235");
+    
     System.out.println(result);
         
-
+  
       
        
        
