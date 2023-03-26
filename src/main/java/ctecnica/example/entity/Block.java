@@ -9,7 +9,7 @@ public class Block extends Piece {
     int width = 1;
     int id = 0;
 
-    public Block(){
+    public Block() {
         super();
     }
 
@@ -61,67 +61,26 @@ public class Block extends Piece {
         this.id = id;
     }
 
-    // methods
+    public boolean horizontal(Block block) {
 
- 
+        if (block.orientation == "h") {
+            return positionY == block.positionY && (positionX <= block.positionX && block.positionX < positionX + length
+                    || block.positionX <= positionX && positionX < block.length);
+        }else{
+            return positionY <= block.positionY && block.positionY < positionY + 1 && positionX <= block.positionX && block.positionX < positionX +length;
+        }
+       
 
-    @Override
-    public void horizontal() {
-        // TODO Auto-generated method stub
-        System.out.println("orientation h");
     }
 
-    @Override
-    public void vertical() {
-        // TODO Auto-generated method stub
-       System.out.println(" v");
+
+    public boolean vertical (Block block){
+        if (block.orientation == "v"){
+            return positionX == block.positionX && (positionY <= block.positionY && block.positionY < positionY + length || block.positionY <= positionY && positionY < block.length);
+        }else{
+             return positionX <= block.positionX && block.positionX < positionX + 1 && positionY <= block.positionY && block.positionY < positionY + length;
+        }
     }
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // public boolean overlap(Block block) {
-    //     //comprobamos si se superponen o no 
-    //     // estan en orientacion h
-    //     if(block.orientation == "h"){
-    //         return positionY == block.positionY && (positionX <= block.positionX && block.positionX < positionX + length || block.positionX <= positionX && positionX < block.length);
-
-
-    //     } else{
-    //         return positionY <= block.positionY && block.positionY < positionY + 1 && positionX <= block.positionX && block.positionX < positionX + length;
-    //     }
-
-
-
-    //     // if(block.orientation == "v"){
-    //     //     return positionX == block.positionX && ( positionY <= block.positionY && block.positionY < positionY + length || block.positionY <= positionY && positionY < block.length);
-    //     // }   
-
-
-
-    // }
 
 }
