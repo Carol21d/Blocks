@@ -66,21 +66,21 @@ public class Block extends Piece {
         if (block.orientation == "h") {
             return positionY == block.positionY && (positionX <= block.positionX && block.positionX < positionX + length
                     || block.positionX <= positionX && positionX < block.length);
-        }else{
-            return positionY <= block.positionY && block.positionY < positionY + 1 && positionX <= block.positionX && block.positionX < positionX +length;
+        } else {
+            return positionY <= block.positionY && block.positionY < positionY + 1 && positionX <= block.positionX
+                    && block.positionX < positionX + length;
         }
-       
 
     }
 
-
-    public boolean vertical (Block block){
-        if (block.orientation == "v"){
-            return positionX == block.positionX && (positionY <= block.positionY && block.positionY < positionY + length || block.positionY <= positionY && positionY < block.length);
-        }else{
-             return positionX <= block.positionX && block.positionX < positionX + 1 && positionY <= block.positionY && block.positionY < positionY + length;
+    public boolean vertical(Block block) {
+        if (block.orientation == "v") {
+            return positionX == block.positionX && (positionY <= block.positionY && block.positionY < positionY + length
+                    || block.positionY <= positionY && positionY < block.length);
+        } else {
+            return positionX <= block.positionX && block.positionX < positionX + 1 && positionY <= block.positionY
+                    && block.positionY < positionY + length;
         }
     }
-
 
 }

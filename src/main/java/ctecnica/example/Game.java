@@ -10,7 +10,7 @@ public class Game {
 
         
         if(!(bloque1 instanceof Block) ||!(bloque2 instanceof Block)){
-            throw new Exception("error elige un bloque");
+            throw new Exception("error");
         }
 
          Block block1 = (Block) bloque1;
