@@ -27,6 +27,7 @@ A block‘s orientation is either vertical („v“) or horizontal („h“). Yo
 ## Herramientas utilizadas
 
 * Visual Studio
+* JUnit
 ## Lenguajes utilizados
 
 * Java
